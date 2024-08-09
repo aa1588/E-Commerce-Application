@@ -1,0 +1,94 @@
+Users
+-----
+_id?: string;
+    username?: string;
+    imageUrl: string;
+    isAdmin?: boolean;
+    isSuperAdmin?: boolean;
+    email: string;
+    password: string;
+    createdAt?: Date;
+    updatedAt?: Date;
+
+categories
+----------
+_id? : string;
+name : string;
+description : string;
+subcategories : [
+    {
+        _id?:string;
+        name : string;
+        description : string;
+    }
+]
+
+Products
+--------
+title : string;
+description : string;
+image : string
+brand : string;
+price : number;
+user : ObjectId, 'users',
+category : ObjectId, 'Categories',
+subs : ObjectId, 'subCategories'
+quantity : number;
+sold : number, default : 0;
+
+Cart
+----
+products : [
+	{
+		product : ObjectId,
+		count : number,
+		price : number,
+	}
+],
+total : number,
+tax : number,
+grandTotal : number,
+userObj : ObjectId
+
+
+orders
+-------
+products : [
+{
+		product : ObjectId,
+		count : number,
+		price : number,
+	}
+],
+tax? : number;
+total? : number;
+paymentType : string;
+orderStatus : enum,
+orderBy : ObjectId
+
+address
+-------
+name
+email 
+mobile
+address 
+street
+landmark
+city
+state
+country
+pincode
+userObj : objectId
+
+
+
+
+
+
+
+
+
+
+
+
+

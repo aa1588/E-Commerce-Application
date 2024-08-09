@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build and dependency directories
+dist/
+build/
+.cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Frontend build output
+/public/static
+/public/build
+
+# Frontend specific files
+/src/.next/
+/src/.nuxt/
+/src/.cache/
+/src/.out/
+/src/.parcel-cache/
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# TypeScript
+*.tsbuildinfo

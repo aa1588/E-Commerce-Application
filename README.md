@@ -6,10 +6,11 @@ This project aims to develop skills in MERN stack technologies while integrating
 ## How to Run 
 1.  Clone this project.
 
-### The server
 
 
-1.  Run `cd server`. Update `.env` with your details.
+## The client
+
+1.  Run `cd client`. Update `.env` with your details.
      ```shell
     REACT_APP_EXPRESS_SERVER_URL="http://localhost:9000"
     REACT_APP_CLOUDINARY_CLOUD_NAME="dkziw6hud"
@@ -20,8 +21,8 @@ This project aims to develop skills in MERN stack technologies while integrating
 
 This should connect the server to the mongoDB and start the backend application.
 
-## The client
-1.  Run `cd client`. Update `.env` with your details.
+### The server
+1.  Run `cd server`. Update `.env` with your details.
     ```shell
     EXPRESS_APP_MONGO_DB_CLOUD_URL="mongodb+srv://amritcsadhikari:ewXvtYKTg3hqUFVn@e-commerce-cluster.x0087.mongodb.net/?retryWrites=true&w=majority&appName=e-commerce-cluster"
     EXPRESS_APP_MONGO_DB_DATABASE_NAME="react-e-commerce"
